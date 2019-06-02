@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ng-cribs</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+
+	
+
+</head>
+<body ng-app="ngCribs" ng-controller="cribsController">
+	<button ng-click="sayHello()">Say Hello</button>
+	<!--nav bar-->
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+  	<div class="navbar-header">
+    <a class="navbar-brand" href="#">ng-cribs</a>
+	</div>
+  </div>
+</nav>
+
+	<!--Real Estate Listings-->
+	<div class="container">
+		<div class="col-sm-4" ng-repeat="crib in cribs">
+			<div class="thumbnail">
+				<img ng-src="images/{{crib.image}}.jpg" alt="">
+				<div class="caption">
+					<div ng-hide="showDetails===true">
+					<h3><i class="glyphicon glyphicon-tag"></i>{{ crib.price | currency }}</h3>
+					<h4><i class="glyphicon glyphicon-tag"></i>{{ crib.address }}
+						<span class="label label-primary label-sm">{{crib.type}}</span>
+					</h4>
+				</div>
+
+				<button class="btn btn=xs btn=success"
+				ng-hide="showDetails===true"
+				ng-click="showDetails=!showDetails">Details
+					
+				</button>
+				<button class="btn btn=xs btn=success"
+				ng-hide="showDetails===true"
+				ng-click="showDetails=!showDetails">Details
+					
+				</button>
+				<div class="details" ng-show="showDetails===true">
+					<h4>
+						<span class="label label-primary">Beds:{{crib.details.bedrooms}}</span>
+						<span class="label label-primary">Beds:{{crib.details.bedrooms}}</span>
+						<span class="label label-primary">Beds:{{crib.details.area}}</span>
+					</h4>
+					<p><strong>Description : </strong>{{ crib.description }}</p>
+				</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		
+</body>	
+	
+<script type="text/javascript "src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js">
+
+</script>
+<script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+<script src="app.js"></script>
+<script src="script/cribsController.js"></script>
+<script src="script/cribsFactory.js"></script>
+
+</html>

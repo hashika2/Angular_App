@@ -1,0 +1,72 @@
+[
+		{
+			"id":1,
+			"type":"condo",
+			"price":22000,
+			"address":"213 Grove Streem",
+			"description":"Excellent place ,reality nice view!"
+			"details"{
+				"bedrooms":2,
+				"bathrooms":1.4,
+				"area":1023
+			},
+			"image":"crib-1"
+		},	
+
+		{
+			"id":2,
+			"type":"condo",
+			"price":22000,
+			"address":"213 Grove Streem",
+			"description":"Excellent place ,reality nice view!"
+			"details"{
+				"bedrooms":2,
+				"bathrooms":1.4,
+				"area":1023
+			},
+			"image":"crib-2"
+		},		
+
+		{
+			"id":5,
+			"type":"condo",
+			"price":22000,
+			"address":"213 Grove Streem",
+			"description":"Excellent place ,reality nice view!"
+			"details"{
+				"bedrooms":2,
+				"bathrooms":1.4,
+				"area":1023
+			},
+			"image":"crib-3"
+		},	
+
+		{
+			"id":3,
+			"type":"condo",
+			"price":22000,
+			"address":"213 Grove Streem",
+			"description":"Excellent place ,reality nice view!"
+			"details"{
+				"bedrooms":2,
+				"bathrooms":1.4,
+				"area":1023
+			},
+			"image":"crib-4"
+		},	
+
+		{
+			"id":4,
+			"type":"condo",
+			"price":22000,
+			"address":"213 Grove Streem",
+			"description":"Excellent place ,reality nice view!"
+			"details"{
+				"bedrooms":2,
+				"bathrooms":1.4,
+				"area":1023
+			},
+			"image":"crib-5"
+		}
+
+		];
